@@ -30,12 +30,13 @@ public class MessagesResource {
 	}
 	
 	@GET
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Message> GetMessages() {
 		//MessageService service = new MessageService();
 		//MSG = service.getAllMessages();
 		//return MSG;
-		return service.getAllMessages();
+		//System.out.println("Fetching all messages");
+		return service.getAllMessages();		
 	}
 	
 	@GET
